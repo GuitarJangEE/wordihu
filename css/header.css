@@ -1,0 +1,36 @@
+header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d3d6da;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-icons img {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px 0 5px;
+  cursor: pointer;
+}
+
+#Wordle {
+  font-weight: bolder;
+  font-size: 20px;
+  cursor: default;
+}
+
+#Subscribe {
+  padding: 6px 18px 6px 18px;
+  border: 1px solid black;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
