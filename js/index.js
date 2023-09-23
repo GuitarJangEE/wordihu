@@ -1,4 +1,4 @@
-const 정답 = "SIHUD";
+const 정답 = "TRAIN";
 
 let attempts = 0;
 let index = 0;
