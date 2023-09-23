@@ -26,6 +26,7 @@ footer {
   font-size: 25px;
   border-radius: 8px;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 .key-big {
@@ -39,8 +40,22 @@ footer {
   font-size: 17px;
   border-radius: 8px;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 .key-big img {
   scale: 0.47;
+}
+
+.key-small:hover {
+  background-color: #f5f5f5;
+}
+.key-big:hover {
+  background-color: #f5f5f5;
+}
+.key-small:active {
+  background-color: gray;
+}
+.key-big:active {
+  background-color: gray;
 }

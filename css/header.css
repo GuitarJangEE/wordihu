@@ -18,12 +18,14 @@ header {
   height: 30px;
   margin: 0 5px 0 5px;
   cursor: pointer;
+  animation: 1s 워들;
 }
 
 #Wordle {
   font-weight: bolder;
   font-size: 20px;
   cursor: default;
+  animation: 1s 워들;
 }
 
 #Subscribe {
@@ -33,4 +35,14 @@ header {
   font-size: 15px;
   font-weight: bold;
   cursor: pointer;
+  animation: 1s 워들;
+}
+
+@keyframes 워들 {
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1.1);
+  }
 }

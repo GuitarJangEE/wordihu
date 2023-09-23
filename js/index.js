@@ -66,7 +66,6 @@ function appStart() {
   };
   const startTimer = () => {
     const 시작시간 = new Date();
-
     function setTime() {
       const 현재시간 = new Date();
       const 흐른시간 = new Date(현재시간 - 시작시간);
@@ -81,5 +80,37 @@ function appStart() {
 
   startTimer();
   window.addEventListener("keydown", handleKeydown);
+  window.addEventListener("click", handleClick);
+  }
+  const handleClick = (event) => {
+    const key = event.key.toUpperCase();
+    const keyCode = event.keyCode;
+    const thisBlock = document.querySelector(
+      `.board-block[data-index='${attempts}${index}']`
+    );
+    const handleBackspace = () => {
+      if (index > 0) {
+        const preBlock = document.querySelector(
+          `.board-block[data-index='${attempts}${index - 1}']`
+        );
+        preBlock.innerText = "";
+      }
+      if (index !== 0) index -= 1;
+    };
+    if (event.key === "Backspace") handleBackspace();
+    else if (index === 5) {
+      if (event.key === "Enter") handleEnterKey();
+      else return;
+    } else if (65 <= keyCode && 90 >= keyCode) {
+      thisBlock.innerText = key;
+      index += 1;
+    }
+  };
 }
+// function appStart() {
+//   const handleClick = (event) => {
+//     const key = event.console.log("클릭됨", event);
+//   };
+//   window.addEventListener("click", handleClick);
+// }
 appStart();
