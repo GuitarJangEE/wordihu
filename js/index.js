@@ -6,11 +6,8 @@ let timer;
 
 function appStart() {
   const displayGameover = () => {
-    const div = document.createElement("div");
-    div.innerText = "게임이 종료됐습니다.";
-    div.style =
-      "display:flex; justify-content:center; align-items:center; position:absolute; top: 30vh;left: 8vh; background-color:white; width: 400px; height: 100px; font-size: 30px;";
-    document.body.appendChild(div);
+    const div = document.querySelector("#gameggt");
+    gameggt.style.display = "block";
   };
   const nextLine = () => {
     if (attempts === 5) return gameover();
