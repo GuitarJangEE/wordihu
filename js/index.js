@@ -1,4 +1,4 @@
-const 정답 = "APPLE";
+const 정답 = "SIHUD";
 
 let attempts = 0;
 let index = 0;
@@ -79,8 +79,9 @@ function appStart() {
   };
 
   startTimer();
-  window.addEventListener("keydown", handleKeydown);
-  window.addEventListener("click", handleClick);
+  {
+    window.addEventListener("keydown", handleKeydown);
+    window.addEventListener("click", handleClick);
   }
   const handleClick = (event) => {
     const key = event.key.toUpperCase();
